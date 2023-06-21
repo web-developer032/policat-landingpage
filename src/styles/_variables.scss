@@ -1,0 +1,41 @@
+:root {
+    --clr-pink: #ff40bd;
+    --clr-orange: #ffaa1b;
+    --clr-purple: #6900ff;
+    --clr-darkblue: #2a2d53;
+    --clr-yellow: #fff42c;
+    --clr-brown: #261d14;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-black-light: #373737;
+    --clr-base-1: #fff;
+    --clr-base-2: rgba(255, 255, 255, 0.06);
+    --clr-base-3: rgba(198, 198, 198, 0.22);
+
+    --font-family: "League Spartan", sans-serif;
+    --clr-text: var(--clr-black);
+    --clr-background: var(--clr-white);
+    --clr-primary: var(--clr-yellow);
+
+    --clr-border: rgba(0, 0, 0, 0.1);
+    --clr-box-shadow: rgba(0, 0, 0, 0.11);
+    --border-radius: 15px;
+    --box-shadow: 0px 4px 20px var(--clr-box-shadow);
+
+    --clr-light-light: rgba(255, 255, 255, 0.5);
+    --clr-dark-light: rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-text: var(--clr-white);
+        --clr-background: var(--clr-black);
+        --clr-primary: var(--clr-purple);
+
+        --clr-base-1: #1b1b1b;
+        --clr-base-2: rgba(217, 217, 217, 0.1);
+        --clr-base-3: rgba(165, 102, 255, 0.22);
+
+        --clr-border: rgba(255, 255, 255, 0.1);
+    }
+}

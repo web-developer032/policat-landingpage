@@ -1,0 +1,113 @@
+.icon-xl {
+    width: 5rem;
+    height: auto;
+}
+.icon-l {
+    width: 4rem;
+    height: auto;
+}
+.icon {
+    width: 3rem;
+    height: auto;
+}
+.icon-s {
+    width: 2.5rem;
+    height: auto;
+}
+.icon-xs {
+    width: 2rem;
+    height: auto;
+}
+
+.btn-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.d-btn {
+    text-decoration: none;
+    border-radius: 10rem;
+    color: #000;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    svg {
+        fill: var(--clr-black);
+    }
+
+    &.filled {
+        background-color: var(--clr-purple);
+        color: var(--clr-white);
+        svg {
+            fill: var(--clr-white);
+        }
+    }
+    &.outlined {
+        background-color: transparent;
+        border: 1px solid var(--clr-purple);
+        color: var(--clr-text);
+        svg {
+            fill: var(--clr-text);
+        }
+    }
+}
+
+.d-card {
+    background-color: var(--clr-base-2);
+    border-radius: 15px;
+    border: 3px solid var(--clr-border);
+    padding: 3rem;
+}
+
+.main-container {
+    max-width: 130rem;
+    margin-inline: auto;
+}
+
+@media only screen and (min-width: 800px) {
+    .hide-desktop {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .d-btn {
+        &.outlined {
+            border: 1px solid var(--clr-purple);
+            color: var(--clr-purple);
+            svg {
+                fill: var(--clr-purple);
+            }
+        }
+    }
+}
+
+body.dark {
+    .d-btn {
+        &.outlined {
+            border: 1px solid var(--clr-purple);
+            color: var(--clr-purple);
+            svg {
+                fill: var(--clr-purple);
+            }
+        }
+    }
+}
+
+body.light {
+    .d-btn {
+        &.outlined {
+            color: var(--clr-text);
+            svg {
+                fill: var(--clr-text);
+            }
+        }
+    }
+}
