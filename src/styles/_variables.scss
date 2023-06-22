@@ -1,3 +1,13 @@
+font-face {
+    font-family: "InfiniteJusticeStraight";
+    src: url("../assets/font/InfiniteS.ttf") format("truetype");
+}
+@font-face {
+    font-family: "InfiniteJusticeStraight";
+    font-style: italic;
+    src: url("../assets/font/Infinite.ttf") format("truetype");
+}
+
 :root {
     --clr-pink: #ff40bd;
     --clr-orange: #ffaa1b;
@@ -12,7 +22,10 @@
     --clr-base-2: rgba(255, 255, 255, 0.06);
     --clr-base-3: rgba(198, 198, 198, 0.22);
 
+    --font-family-primary: "InfiniteJusticeStraight", sans-serif;
+    // --font-family-primary-italic: "InfiniteJusticeStraightItalic ", sans-serif;
     --font-family: "League Spartan", sans-serif;
+
     --clr-text: var(--clr-black);
     --clr-background: var(--clr-white);
     --clr-primary: var(--clr-yellow);

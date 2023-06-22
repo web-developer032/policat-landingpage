@@ -7,6 +7,10 @@ function Home() {
 
     return (
         <section className="home-container">
+            <h1>
+                Welcome to PoliceCat BTC, where art, innovation, and blockchain unite to redefine
+                the future of digital ownership.
+            </h1>
             <section className="landing">
                 <article className="left"></article>
             </section>

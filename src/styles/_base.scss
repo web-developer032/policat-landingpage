@@ -44,8 +44,10 @@ body {
     height: 100%;
     color: var(--clr-text) !important;
     background-color: var(--clr-background) !important;
-    font-family: var(--font-family);
+    font-family: var(--font-family-primary);
+    font-style: normal;
     line-height: 1;
+    letter-spacing: 2px;
     overflow-x: hidden;
 }
 
