@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useResponsiveView } from "@/utils/customHooks";
 import twitterIcon from "@/assets/icons/twitter.png";
 import mediumIcon from "@/assets/icons/medium.png";
 import telegramIcon from "@/assets/icons/telegram.png";

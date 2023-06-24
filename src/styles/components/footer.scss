@@ -42,11 +42,13 @@
         }
     }
 
-    .right {
+    @media only screen and (max-width: 800px) {
+        .footer-content,
+        .left,
+        .right {
+            flex-direction: column;
+        }
     }
-}
-
-@media only screen and (max-width: 1030px) {
 }
 
 @media only screen and (max-width: 400px) {

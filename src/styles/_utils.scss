@@ -100,3 +100,29 @@
         letter-spacing: 0;
     }
 }
+
+.slick-dots {
+    bottom: -15%;
+
+    li {
+        button,
+        button::before {
+            color: var(--clr-secondary);
+            content: "⬜";
+        }
+
+        button::before {
+            font-size: 2rem;
+            transform: rotate(-45deg);
+        }
+
+        &.slick-active {
+            button::before {
+                color: var(--clr-secondary);
+            }
+        }
+    }
+}
+.mobile-menu-icon {
+    fill: #fff;
+}

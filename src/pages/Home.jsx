@@ -12,6 +12,9 @@ import heroCat3 from "@/assets/images/hero-3.png";
 import heroCat4 from "@/assets/images/hero-4.png";
 import heroCat5 from "@/assets/images/hero-5.png";
 
+import nftItem1 from "@/assets/images/nft-item-1.png";
+import nftItem2 from "@/assets/images/nft-item-2.png";
+
 import join1 from "@/assets/icons/join-1.svg";
 import join2 from "@/assets/icons/join-2.svg";
 import join3 from "@/assets/icons/join-3.svg";
@@ -22,8 +25,31 @@ import key3 from "@/assets/icons/key-3.svg";
 import key4 from "@/assets/icons/key-4.svg";
 import key5 from "@/assets/icons/key-5.svg";
 
+import Slider from "react-slick";
+
 function Home() {
     const isMobileView_500 = useResponsiveView(500);
+
+    const settings = {
+        className: "center",
+        dots: true,
+        infinite: true,
+        centerPadding: "60px",
+        slidesToShow: 4,
+        speed: 500,
+        arrows: false,
+        variableWidth: true,
+        adaptiveHeight: true,
+        gap: 30,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    };
+
+    useEffect(() => {
+        if (isMobileView_500) {
+            settings.centerMode = true;
+        }
+    }, [isMobileView_500]);
 
     return (
         <section className="home-container">
@@ -138,6 +164,67 @@ function Home() {
                             only PoliceCat BTC can offer.
                         </p>
                     </article>
+                </section>
+
+                <section className="nft-collection">
+                    <Slider {...settings}>
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem1} alt="nft item" />
+                            </figure>
+
+                            <div className="number">99</div>
+                        </article>
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem2} alt="nft item" />
+                            </figure>
+
+                            <div className="number">01</div>
+                        </article>{" "}
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem1} alt="nft item" />
+                            </figure>
+
+                            <div className="number">99</div>
+                        </article>
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem2} alt="nft item" />
+                            </figure>
+
+                            <div className="number">01</div>
+                        </article>
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem1} alt="nft item" />
+                            </figure>
+
+                            <div className="number">99</div>
+                        </article>
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem2} alt="nft item" />
+                            </figure>
+
+                            <div className="number">01</div>
+                        </article>{" "}
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem1} alt="nft item" />
+                            </figure>
+
+                            <div className="number">99</div>
+                        </article>
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem2} alt="nft item" />
+                            </figure>
+
+                            <div className="number">01</div>
+                        </article>
+                    </Slider>
                 </section>
 
                 <section className="revolution-container mb-32">

@@ -1,0 +1,64 @@
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+
+    .logo__container {
+        max-width: 10rem;
+    }
+
+    .mobile-menu {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        z-index: 10;
+        top: 50%;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        // background-image: var(--clr-linear-gradient-2);
+        background-color: var(--clr-dark);
+        font-size: 2rem;
+        padding: 3rem;
+        transition: 0.3s;
+
+        &.active {
+            top: 100%;
+            visibility: visible;
+            opacity: 1;
+            z-index: 10;
+            // animation: toBottom 0.3s linear  forwards  ;
+        }
+        .main-links {
+            color: #fff;
+            margin-bottom: 4rem;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        .social-links {
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+    }
+}
+
+@keyframes toBottom {
+    to {
+        top: 100%;
+        visibility: visible;
+        opacity: 1;
+        z-index: 10;
+    }
+}
