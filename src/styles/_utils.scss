@@ -19,43 +19,62 @@
     height: auto;
 }
 
+.gradient-text {
+    background-image: var(--clr-linear-gradient-2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 .btn-actions {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
+.d-btn-gradient {
+    padding: 1rem 3.5rem;
+    font-family: inherit;
+}
+
+.gradient-border {
+    position: relative;
+}
+.gradient-border::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+}
+.gradient-border-1::before {
+    background: var(--clr-linear-gradient-1) border-box;
+    -webkit-mask: var(--clr-linear-gradient-1) padding-box, var(--clr-linear-gradient-1);
+}
+.gradient-border-2::before {
+    background: var(--clr-linear-gradient-2) border-box;
+    -webkit-mask: var(--clr-linear-gradient-2) padding-box, var(--clr-linear-gradient-2);
+}
+
 .d-btn {
     text-decoration: none;
-    border-radius: 10rem;
-    color: #000;
+    border-radius: 5px;
     font-size: 2rem;
+    font-family: inherit;
     cursor: pointer;
-    padding: 1rem 2.5rem;
+    padding: 1rem 3rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 
-    svg {
-        fill: var(--clr-black);
-    }
-
     &.filled {
-        background-color: var(--clr-purple);
-        color: var(--clr-white);
-        svg {
-            fill: var(--clr-white);
-        }
-    }
-    &.outlined {
-        background-color: transparent;
-        border: 1px solid var(--clr-purple);
-        color: var(--clr-text);
-        svg {
-            fill: var(--clr-text);
-        }
+        font-family: var(--font-family-primary);
+        color: var(--clr-dark);
+        background-image: var(--clr-linear-gradient-2);
     }
 }
 
@@ -74,40 +93,5 @@
 @media only screen and (min-width: 800px) {
     .hide-desktop {
         display: none;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .d-btn {
-        &.outlined {
-            border: 1px solid var(--clr-purple);
-            color: var(--clr-purple);
-            svg {
-                fill: var(--clr-purple);
-            }
-        }
-    }
-}
-
-body.dark {
-    .d-btn {
-        &.outlined {
-            border: 1px solid var(--clr-purple);
-            color: var(--clr-purple);
-            svg {
-                fill: var(--clr-purple);
-            }
-        }
-    }
-}
-
-body.light {
-    .d-btn {
-        &.outlined {
-            color: var(--clr-text);
-            svg {
-                fill: var(--clr-text);
-            }
-        }
     }
 }

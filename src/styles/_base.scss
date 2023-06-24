@@ -42,35 +42,39 @@ html {
 
 body {
     height: 100%;
-    color: var(--clr-text) !important;
-    background-color: var(--clr-background) !important;
-    font-family: var(--font-family-primary);
+    font-family: var(--font-family);
     font-style: normal;
     line-height: 1;
-    letter-spacing: 2px;
-    overflow-x: hidden;
+    background: var(--clr-dark);
 }
 
-body.light {
-    background: linear-gradient(66.95deg, #f1f1f1 -0.5%, #ffffff 79.09%) !important;
-}
-body.dark {
-    background: #000 !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-primary);
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 
 h1 {
     font-size: 4.5rem;
-    font-weight: 700;
 }
 h2 {
     font-size: 3.5rem;
-    font-weight: 700;
 }
 h3 {
+    font-size: 2.8rem;
+}
+h4 {
     font-size: 2.5rem;
-    font-weight: 700;
+}
+h5 {
+    font-size: 2.2rem;
 }
 p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 400;
 }

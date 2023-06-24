@@ -1,7 +1,7 @@
 import React from "react";
-import twitterIcon from "@/assets/icons/twitter.svg";
-import mediumIcon from "@/assets/icons/medium.svg";
-import telegramIcon from "@/assets/icons/telegram.svg";
+import twitterIcon from "@/assets/icons/twitter.png";
+import mediumIcon from "@/assets/icons/medium.png";
+import telegramIcon from "@/assets/icons/telegram.png";
 
 function Footer() {
     return (
