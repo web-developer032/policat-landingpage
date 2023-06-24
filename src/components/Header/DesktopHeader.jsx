@@ -62,7 +62,7 @@ function DesktopHeader() {
             </section>
 
             <button className="d-btn-gradient gradient-text gradient-border gradient-border-2">
-                Mint Now
+                <span>Mint Now</span>
             </button>
         </header>
     );

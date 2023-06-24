@@ -24,6 +24,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    & > * {
+        position: relative;
+        z-index: 4;
+    }
 }
 
 .btn-actions {
@@ -39,6 +44,10 @@
 
 .gradient-border {
     position: relative;
+    & > * {
+        z-index: 4;
+        position: relative;
+    }
 }
 .gradient-border::before {
     position: absolute;
