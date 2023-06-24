@@ -95,19 +95,19 @@
             .hero-images {
                 figure {
                     &.left-2 {
-                        transform: translateY(140px) translateX(30px) scale(1.8);
+                        transform: translateY(300px) translateX(30px) scale(1.8);
                     }
                     &.left-1 {
-                        transform: translateY(130px) translateX(20px) scale(1.8);
+                        transform: translateY(290px) translateX(20px) scale(1.8);
                     }
                     &.middle {
-                        transform: translateY(110px) scale(1.8);
+                        transform: translateY(270px) scale(1.8);
                     }
                     &.right {
-                        transform: translateY(130px) translateX(-20px) scale(1.8);
+                        transform: translateY(290px) translateX(-20px) scale(1.8);
                     }
                     &.right-2 {
-                        transform: translateY(140px) translateX(-30px) scale(1.8);
+                        transform: translateY(300px) translateX(-30px) scale(1.8);
                     }
                 }
             }
