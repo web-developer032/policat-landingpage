@@ -22,6 +22,10 @@
         gap: 3rem;
     }
 
+    .logo__container {
+        max-width: 15rem;
+    }
+
     nav {
         ul {
             display: flex;
@@ -32,15 +36,9 @@
         }
     }
 
-    @media only screen and (max-width: 1440px) {
-        .logo__container {
-            max-width: 15rem;
-        }
-    }
-
-    @media only screen and (max-width: 1030px) {
-        .logo__container {
-            max-width: 10rem;
-        }
-    }
+    // @media only screen and (max-width: 1030px) {
+    //     .logo__container {
+    //         max-width: 10rem;
+    //     }
+    // }
 }

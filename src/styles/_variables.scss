@@ -8,14 +8,14 @@
     --clr-dark: #150901;
     --clr-brown-dark: #442505;
     --clr-mustard: #ffffbf;
-    --clr-brown-light: #ff8610;
+    --clr-brown-light: rgb(255, 135, 15);
     --clr-secondary: rgba(250, 213, 170, 1);
 
     --clr-linear-gradient-1: linear-gradient(
         133.88deg,
         #ffffbf -27.3%,
         #ff8610 25.34%,
-        #2b0000 93.58%
+        rgb(43, 0, 0) 93.58%
     );
 
     --clr-linear-gradient-2: linear-gradient(
