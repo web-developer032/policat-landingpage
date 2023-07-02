@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import twitterIcon from "@/assets/icons/twitter.png";
 import mediumIcon from "@/assets/icons/medium.png";
 import telegramIcon from "@/assets/icons/telegram.png";
@@ -6,7 +7,7 @@ import logo from "@/assets/logos/logo.png";
 
 function DesktopHeader() {
     return (
-        <header className="main-header">
+        <header className="main-header d-glass">
             <nav className="social-links">
                 <ul>
                     <li>
@@ -43,19 +44,21 @@ function DesktopHeader() {
                 </nav>
 
                 <figure className="logo__container">
-                    <img src={logo} alt="logo" />
+                    <Link to={"/"}>
+                        <img src={logo} alt="logo" />
+                    </Link>
                 </figure>
 
                 <nav className={`main-links`}>
                     <ul>
                         <li>
-                            <a href="#">Team</a>
+                            <Link to="/charities">Charities</Link>
                         </li>
                         <li>
                             <a href="#">Mint</a>
                         </li>
                         <li>
-                            <a href="#">Wallet Checker</a>
+                            <Link to="/playgame">Play Game</Link>
                         </li>
                     </ul>
                 </nav>

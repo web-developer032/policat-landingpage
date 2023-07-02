@@ -1,24 +1,24 @@
-// import { useState, useEffect } from "react";
 import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer";
 import Home from "@/pages/Home";
-// import { useAuthState } from "@/context/AuthContext";
-// import { setDarkModeVariables, setLightModeVariables } from "@/utils/utils";
+import { Route, Routes } from "react-router-dom";
+import Charities from "./pages/Charities";
+import PlayGame from "./pages/PlayGame";
 
 function App() {
-    // const { authState, updateTheme } = useAuthState();
-    // useEffect(() => {
-    //     if (authState.preferDark) {
-    //         setDarkModeVariables();
-    //     } else {
-    //         setLightModeVariables();
-    //     }
-    // }, [authState.preferDark]);
-
     return (
         <>
             <Header />
-            <Home />
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+
+            <Routes>
+                <Route path="/charities" element={<Charities />} />
+            </Routes>
+
+            <Routes>
+                <Route path="/playgame" element={<PlayGame />} />
+            </Routes>
         </>
     );
 }

@@ -1,10 +1,17 @@
 .mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+
     padding: 1.5rem 3rem;
     font-size: 2rem;
+    background-color: transparent;
 
     .logo__container {
         max-width: 10rem;
@@ -21,7 +28,6 @@
         visibility: hidden;
         opacity: 0;
         z-index: -1;
-        // background-image: var(--clr-linear-gradient-2);
         background-color: var(--clr-dark);
         font-size: 2rem;
         padding: 3rem;
@@ -32,7 +38,6 @@
             visibility: visible;
             opacity: 1;
             z-index: 10;
-            // animation: toBottom 0.3s linear  forwards  ;
         }
         .main-links {
             color: #fff;

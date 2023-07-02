@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useResponsiveView } from "@/utils/customHooks";
 
 import MobileMenuOpenIcon from "@/assets/icons/MobileMenuOpenIcon";
@@ -29,9 +30,11 @@ function MobileHeader() {
     }, [toggleMobileMenu]);
 
     return (
-        <header className=" mobile-header">
+        <header className="d-glass mobile-header">
             <figure className="logo__container">
-                <img src={logo} alt="logo" />
+                <Link to={"/"}>
+                    <img src={logo} alt="logo" />
+                </Link>
             </figure>
 
             <button className="d-btn-gradient gradient-text gradient-border gradient-border-2">
@@ -50,7 +53,7 @@ function MobileHeader() {
                 </button>
             )}
 
-            <section className={`mobile-menu ${toggleMobileMenu ? "active" : ""}`}>
+            <section className={`d-glass mobile-menu ${toggleMobileMenu ? "active" : ""}`}>
                 <nav className={`main-links`}>
                     <ul>
                         <li>
@@ -64,13 +67,13 @@ function MobileHeader() {
                         </li>
 
                         <li>
-                            <a href="#">Team</a>
+                            <Link to="/charities">Charities</Link>
                         </li>
                         <li>
                             <a href="#">Mint</a>
                         </li>
                         <li>
-                            <a href="#">Wallet Checker</a>
+                            <Link to="/playgame">Play Game</Link>
                         </li>
                     </ul>
                 </nav>
