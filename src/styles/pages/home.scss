@@ -80,6 +80,7 @@
                 figure {
                     &.left-2 {
                         max-width: 17rem;
+                        transform: translateY(10rem) translateX(-200%) scaleY(1.1);
                     }
                     &.left-1 {
                         max-width: 25rem;
@@ -91,6 +92,7 @@
                         max-width: 25rem;
                     }
                     &.right-2 {
+                        transform: translateY(10rem) translateX(100%) scaleY(1.1);
                         max-width: 17rem;
                     }
                 }
@@ -114,6 +116,28 @@
                     }
                     &.right-2 {
                         max-width: 13rem;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .hero-images {
+                figure {
+                    &.left-2 {
+                        max-width: 10rem;
+                    }
+                    &.left-1 {
+                        max-width: 16rem;
+                    }
+                    &.middle {
+                        max-width: 20rem;
+                    }
+                    &.right-1 {
+                        max-width: 16rem;
+                    }
+                    &.right-2 {
+                        max-width: 10rem;
                     }
                 }
             }
@@ -162,6 +186,9 @@
             br {
                 display: none;
             }
+        }
+        @media only screen and (max-width: 500px) {
+            top: 85%;
         }
     }
 
@@ -233,6 +260,10 @@
         }
         @media only screen and (max-width: 500px) {
             padding-top: 30rem;
+        }
+
+        @media only screen and (max-width: 400px) {
+            padding-top: 40rem;
         }
     }
 
