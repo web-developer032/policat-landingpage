@@ -17,6 +17,8 @@ import nftItem2 from "@/assets/images/nft-item-2.png";
 import nftItem3 from "@/assets/images/nft-item-3.png";
 import nftItem4 from "@/assets/images/nft-item-4.png";
 
+import roadmapLine from "@/assets/images/roadmap-line.png";
+
 import join1 from "@/assets/icons/join-1.svg";
 import join2 from "@/assets/icons/join-2.svg";
 import join3 from "@/assets/icons/join-3.svg";
@@ -421,6 +423,8 @@ function Home() {
                     </header>
 
                     <section className="roadmap-content">
+                        <img src={roadmapLine} alt="roadmap Line" />
+
                         <article className="d-card active">
                             <h2
                                 style={{
