@@ -14,6 +14,8 @@ import heroCat5 from "@/assets/images/hero-5.png";
 
 import nftItem1 from "@/assets/images/nft-item-1.png";
 import nftItem2 from "@/assets/images/nft-item-2.png";
+import nftItem3 from "@/assets/images/nft-item-3.png";
+import nftItem4 from "@/assets/images/nft-item-4.png";
 
 import join1 from "@/assets/icons/join-1.svg";
 import join2 from "@/assets/icons/join-2.svg";
@@ -82,6 +84,29 @@ function Home() {
                         <img src={heroCat3} alt="hero cat 3" />
                     </figure>
                 </section>
+
+                <section
+                    className="join-container"
+                    style={{
+                        backgroundImage: `url(${mainBgImage})`,
+                    }}
+                >
+                    <h5 className="join-heading text-center mb-6">
+                        Welcome to PoliceCat BTC, where art, innovation, <br /> and blockchain unite
+                        to redefine the future of digital ownership.
+                    </h5>
+
+                    <p className="join-para">
+                        Explore our captivating collection and join the movement that safeguards{" "}
+                        <br /> the integrity of Bitcoin.
+                    </p>
+
+                    <button className="d-btn filled join-action">Join Now</button>
+
+                    <p className="join-para">
+                        Inspired by a single question posed by Lil X, the son of visionary Elon Musk
+                    </p>
+                </section>
             </section>
 
             <section
@@ -90,48 +115,54 @@ function Home() {
                     backgroundImage: `url(${carBgImage}),url(${mainBgImage})`,
                 }}
             >
-                <h5
-                    className="vision-heading text-center"
-                    style={{
-                        backgroundImage: `url(${mainBgImage})`,
-                    }}
-                >
-                    Welcome to PoliceCat BTC, where art, innovation, <br /> and blockchain unite to
-                    redefine the <br /> future of digital ownership.
-                </h5>
-
-                <p className="vision-para">
-                    Explore our captivating collection and join the movement that safeguards <br />{" "}
-                    the integrity of Bitcoin.
-                </p>
-
-                <button className="d-btn filled vision-action">Join Now</button>
-
                 <section className="vision-content gradient-border gradient-border-1 ">
                     <h4 className="gradient-text mx-auto mb-4">Vision</h4>
                     <StyledBorder classes="mb-16 mx-auto" />
 
-                    <article className="vision-articles-container  text-white">
-                        <p className="vision-article">
-                            Our Vision: To create a secure and transparent crypto ecosystem through
-                            the power of feline revolution.
-                        </p>
-                        <p className="vision-article">
-                            We believe in leveraging the agility, cleverness, and resilience of cats
-                            to protect the integrity of Bitcoin and reshape the crypto landscape.
-                        </p>
-                        <p className="vision-article">
-                            Join us as we pioneer a new era of digital ownership and ensure a secure
-                            future for all crypto enthusiasts.
-                        </p>
-                    </article>
+                    <section className="vision-articles-container  text-white">
+                        <article className="vision-article">
+                            <h3 className="gradient-text">Revolution</h3>
+                            <p>
+                                PoliceCat BTC redefines crypto, empowers our community, and creates
+                                a transparent, rewarding future. Inspired by Lil X's question, we
+                                safeguard Bitcoin's integrity and revolutionize the crypto space.
+                            </p>
+                        </article>
+                        <article className="vision-article">
+                            <h3 className="gradient-text">Play-to-Earn Game</h3>
+                            <p>
+                                Our 100 PoliceCat BTC NFTs offer more than stunning visuals.
+                                Experience our immersive play-to-earn game, unlocking exciting
+                                rewards and rare items. Your ownership becomes meaningful and
+                                rewarding.
+                            </p>
+                        </article>
+                        <article className="vision-article">
+                            <h3 className="gradient-text">Decentralized Governance & Voting</h3>
+
+                            <p>
+                                Your voice matters. As a PoliceCat BTC NFT holder, shape the
+                                community's future through voting on game updates, features, and
+                                charity initiatives. We value your input.
+                            </p>
+                        </article>
+                        <article className="vision-article">
+                            <h3 className="gradient-text">Join the Movement</h3>
+
+                            <p>
+                                Embrace the power. Join PoliceCat BTC for a transparent, rewarding,
+                                and community-driven future. Together, we unleash the revolutionary
+                                potential of PoliceCat BTC.
+                            </p>
+                        </article>
+                    </section>
                 </section>
             </section>
 
             <section
                 className="collection"
                 style={{
-                    backgroundImage: `url(${mainBgImage})`,
+                    backgroundImage: `url(${carBgImage}),url(${mainBgImage})`,
                 }}
             >
                 <header>
@@ -180,10 +211,24 @@ function Home() {
                                 <img src={nftItem2} alt="nft item" />
                             </figure>
 
-                            <div className="number">01</div>
+                            <div className="number">02</div>
                         </article>{" "}
                         <article className="nft-item">
                             <figure>
+                                <img src={nftItem3} alt="nft item" />
+                            </figure>
+
+                            <div className="number">83</div>
+                        </article>
+                        <article className="nft-item">
+                            <figure>
+                                <img src={nftItem4} alt="nft item" />
+                            </figure>
+
+                            <div className="number">04</div>
+                        </article>
+                        <article className="nft-item">
+                            <figure>
                                 <img src={nftItem1} alt="nft item" />
                             </figure>
 
@@ -194,35 +239,21 @@ function Home() {
                                 <img src={nftItem2} alt="nft item" />
                             </figure>
 
-                            <div className="number">01</div>
-                        </article>
-                        <article className="nft-item">
-                            <figure>
-                                <img src={nftItem1} alt="nft item" />
-                            </figure>
-
-                            <div className="number">99</div>
-                        </article>
-                        <article className="nft-item">
-                            <figure>
-                                <img src={nftItem2} alt="nft item" />
-                            </figure>
-
-                            <div className="number">01</div>
+                            <div className="number">02</div>
                         </article>{" "}
                         <article className="nft-item">
                             <figure>
-                                <img src={nftItem1} alt="nft item" />
+                                <img src={nftItem3} alt="nft item" />
                             </figure>
 
-                            <div className="number">99</div>
+                            <div className="number">83</div>
                         </article>
                         <article className="nft-item">
                             <figure>
-                                <img src={nftItem2} alt="nft item" />
+                                <img src={nftItem4} alt="nft item" />
                             </figure>
 
-                            <div className="number">01</div>
+                            <div className="number">04</div>
                         </article>
                     </Slider>
                 </section>
@@ -281,32 +312,37 @@ function Home() {
                     <StyledBorder classes="mx-auto mb-32" />
 
                     <p>
-                        Welcome to PoliceCat BTC, where art, technology, and feline revolution
-                        converge to create a unique and powerful presence in the crypto space. As a
-                        passionate community of crypto enthusiasts, artists, and cat lovers, we are
-                        committed to safeguarding the integrity of Bitcoin and revolutionizing the
-                        way we perceive digital ownership.
+                        Welcome to PoliceCat BTC, a unique fusion of art, technology, and feline
+                        revolution in the crypto space. We are a passionate community of crypto
+                        enthusiasts, artists, and cat lovers driven by a vision to uphold the
+                        integrity of Bitcoin and redefine digital ownership.
                     </p>
                     <p>
-                        At PoliceCat BTC, we believe that cats possess an innate combination of
-                        agility, cleverness, and resilience that aligns perfectly with the
-                        challenges faced in the crypto realm. Inspired by a single question posed by
-                        Lil X, the son of visionary Elon Musk, we embarked on a mission to bring
-                        together the power of cats and the innovation of blockchain technology.
+                        Drawing inspiration from a question posed by Lil X, the visionary son of
+                        Elon Musk, we embarked on a mission to harness the power of cats and the
+                        innovation of blockchain technology. Our journey led us to create the
+                        PoliceCat BTC Play-to-Earn Game, a groundbreaking platform that combines
+                        immersive gameplay, decentralized governance, and voting mechanisms.
                     </p>
                     <p>
-                        Our collection of PoliceCat BTC NFTs captures the essence of feline strength
-                        and intellect, symbolizing our commitment to protecting the crypto space
-                        from bad actors and fraudulent projects. Each artwork is meticulously
-                        crafted, showcasing the artistic talent of our diverse community of
-                        creators.
+                        In addition to our captivating Play-to-Earn Game, our collection of
+                        PoliceCat BTC NFTs embodies the strength and intelligence of felines. These
+                        meticulously crafted artworks showcase the talents of our diverse community
+                        of creators and serve as symbols of our commitment to protecting the crypto
+                        space from fraudulent projects and bad actors.
                     </p>
                     <p>
-                        We invite you to explore our captivating collection, own a piece of this
-                        digital revolution, and become part of the vibrant PoliceCat BTC community.
-                        Together, we can create a secure and transparent future for all crypto
-                        enthusiasts. Join us in this extraordinary journey and let the power of cats
-                        lead the way.
+                        Through decentralized governance and voting mechanisms, our community plays
+                        an active role in shaping the future of PoliceCat BTC. We believe in
+                        fostering a secure and transparent environment where every participant has a
+                        voice and can contribute to the decision-making process.
+                    </p>
+                    <p>
+                        Join us on this extraordinary journey as we create a secure and transparent
+                        future for all crypto enthusiasts. Explore our captivating collection, own a
+                        piece of this digital revolution, and become an integral part of the vibrant
+                        PoliceCat BTC community. Let the power of cats lead the way toward a new era
+                        of decentralized innovation.
                     </p>
                 </section>
 
@@ -331,8 +367,8 @@ function Home() {
                             </figure>
 
                             <p>
-                                Combining the agility, cleverness, and resilience of cats with
-                                blockchain technology
+                                Fusion of cat agility, cleverness, and resilience with blockchain
+                                technology
                             </p>
                         </article>
 
@@ -342,8 +378,7 @@ function Home() {
                             </figure>
 
                             <p>
-                                Dedicated to safeguarding the integrity of Bitcoin and
-                                revolutionizing digital ownership
+                                Upholding the integrity of Bitcoin and redefining digital ownership
                             </p>
                         </article>
 
@@ -352,9 +387,17 @@ function Home() {
                                 <img src={key4} alt="" />
                             </figure>
 
+                            <p>Captivating PoliceCat BTC NFTs embodying feline power</p>
+                        </article>
+
+                        <article className="d-card active">
+                            <figure>
+                                <img src={key2} alt="" />
+                            </figure>
+
                             <p>
-                                Meticulously crafted PoliceCat BTC NFTs capturing the essence of
-                                feline power
+                                Decentralized governance and voting mechanisms for community
+                                participation
                             </p>
                         </article>
 
@@ -364,9 +407,124 @@ function Home() {
                             </figure>
 
                             <p>
-                                Join us in creating a secure and transparent future for all crypto
+                                Join us in shaping a secure and transparent future for all crypto
                                 enthusiasts
                             </p>
+                        </article>
+                    </section>
+                </section>
+
+                <section className="roadmap-container">
+                    <header>
+                        <h4 className="gradient-text mx-auto mb-4 w-max">Roadmap</h4>
+                        <StyledBorder classes="mx-auto" />
+                    </header>
+
+                    <section className="roadmap-content">
+                        <article className="d-card active">
+                            <h2
+                                style={{
+                                    backgroundImage: `url(${mainBgImage})`,
+                                }}
+                            >
+                                <span className="gradient-text">Phase 1:</span>
+                            </h2>
+                            <h5>Foundation and Community Building (Q3 2023 - Q4 2023)</h5>
+                            <ul>
+                                <li>Launch PoliceCat BTC project</li>
+                                <li>Establish social media channels and forums</li>
+                                <li>Conduct giveaways and events for early supporters</li>
+                                <li>Collaborate with influencers and crypto enthusiasts</li>
+                                <li>Launch website and release 100 unique NFT images</li>
+                                <li>Enable NFT minting</li>
+                                <li>
+                                    Partner with reputable cat shelters and rescue organizations
+                                </li>
+                                <li>Donate to rescue and rehabilitate homeless cats</li>
+                            </ul>
+                        </article>
+
+                        <article className="d-card active">
+                            <h2
+                                style={{
+                                    backgroundImage: `url(${mainBgImage})`,
+                                }}
+                            >
+                                <span className="gradient-text">Phase 2:</span>
+                            </h2>
+                            <h5>Play-to-Earn Game Development (Q4 2023 - Q2 2024)</h5>
+                            <ul>
+                                <li>Develop immersive play-to-earn game</li>
+                                <li>Create captivating game world for PoliceCat NFT holders</li>
+                                <li>
+                                    Design gameplay mechanics for earning rewards and rare items
+                                </li>
+                                <li>Conduct closed beta testing for feedback and refinement</li>
+                            </ul>
+                        </article>
+
+                        <article className="d-card active">
+                            <h2
+                                style={{
+                                    backgroundImage: `url(${mainBgImage})`,
+                                }}
+                            >
+                                <span className="gradient-text">Phase 3:</span>
+                            </h2>
+                            <h5>Game Launch and Expansion (Q3 2024 - Q4 2024) </h5>
+                            <ul>
+                                <li>Launch PoliceCat BTC play-to-earn game</li>
+
+                                <li>Continuously update and improve based on player feedback</li>
+                                <li>Introduce new features, challenges, and events</li>
+                                <li>Collaborate with other NFT projects and platforms</li>
+                            </ul>
+                        </article>
+
+                        <article className="d-card active">
+                            <h2
+                                style={{
+                                    backgroundImage: `url(${mainBgImage})`,
+                                }}
+                            >
+                                <span className="gradient-text">Phase 5:</span>
+                            </h2>
+                            <h5>Expansion and Partnerships (Q3 2025 onwards)</h5>
+                            <ul>
+                                <li>
+                                    Expand project through partnerships with prominent NFT projects
+                                    and platforms
+                                </li>
+                                <li>
+                                    Collaborate with charitable organizations for impactful
+                                    initiatives
+                                </li>
+                                <li>
+                                    Continuously innovate and deliver value to the PoliceCat BTC
+                                    community
+                                </li>
+                            </ul>
+                        </article>
+
+                        <article className="d-card active">
+                            <h2
+                                style={{
+                                    backgroundImage: `url(${mainBgImage})`,
+                                }}
+                            >
+                                <span className="gradient-text">Phase 4:</span>
+                            </h2>
+                            <h5>Governance and Voting Integration (Q1 2025 - Q2 2025)</h5>
+                            <ul>
+                                <li>Implement decentralized governance and voting mechanisms</li>
+                                <li>
+                                    Enable PoliceCat BTC holders to participate in decision-making
+                                </li>
+                                <li>
+                                    Conduct community votes for further development of roadmap and
+                                    initiatives
+                                </li>
+                            </ul>
                         </article>
                     </section>
                 </section>

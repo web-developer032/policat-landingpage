@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import twitterIcon from "@/assets/icons/twitter.png";
 import mediumIcon from "@/assets/icons/medium.png";
 import telegramIcon from "@/assets/icons/telegram.png";
@@ -44,21 +44,21 @@ function DesktopHeader() {
                 </nav>
 
                 <figure className="logo__container">
-                    <Link to={"/"}>
+                    <NavLink to={"/"}>
                         <img src={logo} alt="logo" />
-                    </Link>
+                    </NavLink>
                 </figure>
 
                 <nav className={`main-links`}>
                     <ul>
                         <li>
-                            <Link to="/charities">Charities</Link>
+                            <NavLink to="/charities">Charities</NavLink>
                         </li>
                         <li>
                             <a href="#">Mint</a>
                         </li>
                         <li>
-                            <Link to="/playgame">Play Game</Link>
+                            <NavLink to="/playgame">Play Game</NavLink>
                         </li>
                     </ul>
                 </nav>

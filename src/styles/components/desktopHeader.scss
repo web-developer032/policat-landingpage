@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 10;
 
-    padding: 1.5rem 6rem;
+    padding: 0.5rem 6rem;
 
     display: flex;
     align-items: center;
@@ -20,6 +20,14 @@
         display: flex;
         align-items: center;
         gap: 3rem;
+
+        a.active {
+            background-image: var(--clr-linear-gradient-2);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bolder;
+        }
     }
 
     .logo__container {
@@ -35,10 +43,4 @@
             color: #fff;
         }
     }
-
-    // @media only screen and (max-width: 1030px) {
-    //     .logo__container {
-    //         max-width: 10rem;
-    //     }
-    // }
 }
