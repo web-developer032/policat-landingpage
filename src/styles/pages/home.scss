@@ -15,17 +15,17 @@
             width: max-content;
             margin-inline: auto;
 
-            & span:first-child,
-            & span:last-child {
+            span:first-child,
+            span:last-child {
                 font-size: 60%;
                 color: var(--clr-secondary);
             }
 
-            & span:nth-child(2) {
+            span:nth-child(2) {
                 transform: translateX(-1ch);
             }
 
-            & span:last-child {
+            span:last-child {
                 align-self: end;
             }
         }
@@ -168,7 +168,6 @@
     .vision-container {
         background-position: bottom, center;
         background-repeat: no-repeat, no-repeat;
-        // background-size: center, cover;
         background-size: contain, cover;
         background-blend-mode: luminosity;
 
