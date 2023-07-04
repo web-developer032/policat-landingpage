@@ -1,7 +1,7 @@
 .playgame-container {
     .playgame-content {
         min-height: 100vh;
-        padding-top: 20rem;
+        padding-top: 30vh;
         padding-bottom: 5rem;
         padding-inline: 4rem;
         background-position: center;
@@ -82,6 +82,9 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 8rem 4rem;
+
+            max-width: 130rem;
+            margin-inline: auto;
 
             article {
                 flex-basis: 1 1 30rem;

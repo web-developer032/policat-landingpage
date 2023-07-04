@@ -11,7 +11,6 @@ import telegramIcon from "@/assets/icons/telegram.png";
 import logo from "@/assets/logos/logo.png";
 
 function MobileHeader() {
-    const isMobileView_800 = useResponsiveView();
     const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
     const handleMenuOpen = () => {
@@ -41,13 +40,13 @@ function MobileHeader() {
                 Mint Now
             </button>
 
-            {!toggleMobileMenu && isMobileView_800 && (
+            {!toggleMobileMenu && (
                 <button onClick={handleMenuOpen}>
                     <MobileMenuOpenIcon classes="icon-l mobile-menu-icon" viewBox="0 0 42 37" />
                 </button>
             )}
 
-            {toggleMobileMenu && isMobileView_800 && (
+            {toggleMobileMenu && (
                 <button onClick={handleMenuClose}>
                     <MobileMenuCloseIcon classes="icon-l mobile-menu-icon" viewBox="0 0 36 37" />
                 </button>

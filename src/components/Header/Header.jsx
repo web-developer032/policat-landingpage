@@ -4,9 +4,9 @@ import MobileHeader from "./MobileHeader";
 import DesktopHeader from "./DesktopHeader";
 
 function Header() {
-    const isMobileView_800 = useResponsiveView(800);
+    const isMobileView_900 = useResponsiveView(900);
 
-    return isMobileView_800 ? <MobileHeader /> : <DesktopHeader />;
+    return isMobileView_900 ? <MobileHeader /> : <DesktopHeader />;
 }
 
 export default Header;
