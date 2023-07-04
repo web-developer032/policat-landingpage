@@ -11,7 +11,7 @@ function DesktopHeader() {
             <nav className="social-links">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="https://twitter.com/policecat_btc" target="_blank">
                             <img src={twitterIcon} alt="twitter icon" className="icon-s" />
                         </a>
                     </li>
@@ -32,13 +32,13 @@ function DesktopHeader() {
                 <nav className={`main-links`}>
                     <ul>
                         <li>
-                            <a href="#">Vision</a>
+                            <a href="#vision">Vision</a>
                         </li>
                         <li>
-                            <a href="#">Collection</a>
+                            <a href="#collection">Collection</a>
                         </li>
                         <li>
-                            <a href="#">Roadmap</a>
+                            <a href="#roadmap">Roadmap</a>
                         </li>
                     </ul>
                 </nav>
@@ -55,7 +55,7 @@ function DesktopHeader() {
                             <NavLink to="/charities">Charities</NavLink>
                         </li>
                         <li>
-                            <a href="#">Mint</a>
+                            <a href="#mint">Mint</a>
                         </li>
                         <li>
                             <NavLink to="/playgame">Play Game</NavLink>

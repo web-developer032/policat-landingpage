@@ -57,20 +57,20 @@ function MobileHeader() {
                 <nav className={`main-links`}>
                     <ul>
                         <li>
-                            <a href="#">Vision</a>
+                            <a href="#vision">Vision</a>
                         </li>
                         <li>
-                            <a href="#">Collection</a>
+                            <a href="#collection">Collection</a>
                         </li>
                         <li>
-                            <a href="#">Roadmap</a>
+                            <a href="#roadmap">Roadmap</a>
                         </li>
 
                         <li>
                             <Link to="/charities">Charities</Link>
                         </li>
                         <li>
-                            <a href="#">Mint</a>
+                            <a href="#mint">Mint</a>
                         </li>
                         <li>
                             <Link to="/playgame">Play Game</Link>

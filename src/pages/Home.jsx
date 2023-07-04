@@ -116,6 +116,7 @@ function Home() {
                 style={{
                     backgroundImage: `url(${carBgImage}),url(${mainBgImage})`,
                 }}
+                id="vision"
             >
                 <section className="vision-content gradient-border gradient-border-1 ">
                     <h4 className="gradient-text mx-auto mb-4">Vision</h4>
@@ -166,6 +167,7 @@ function Home() {
                 style={{
                     backgroundImage: `url(${carBgImage}),url(${mainBgImage})`,
                 }}
+                id="collection"
             >
                 <header>
                     <h4 className="gradient-text mx-auto mb-4 w-max">PoliceCat BTC Collection</h4>
@@ -416,7 +418,7 @@ function Home() {
                     </section>
                 </section>
 
-                <section className="roadmap-container">
+                <section className="roadmap-container" id="roadmap">
                     <header>
                         <h4 className="gradient-text mx-auto mb-4 w-max">Roadmap</h4>
                         <StyledBorder classes="mx-auto" />

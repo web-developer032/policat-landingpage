@@ -2,7 +2,7 @@
     position: relative;
 
     .hero-container {
-        padding-top: 22rem;
+        padding-top: 30vh;
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -45,32 +45,31 @@
                 &.left-2 {
                     z-index: 1;
                     transform: translateY(8rem) translateX(-200%) scaleY(1.1);
-                    max-width: 25rem;
+                    max-width: 22rem;
                 }
                 &.left-1 {
                     transform: translateY(8rem) translateX(-110%) scaleY(1.1);
                     z-index: 2;
-                    max-width: 35rem;
+                    max-width: 32rem;
                 }
                 &.middle {
                     z-index: 3;
-                    max-width: 40rem;
+                    max-width: 36rem;
                 }
                 &.right-1 {
                     z-index: 2;
                     transform: translateY(8rem) translateX(0%) scaleY(1.1);
-                    max-width: 35rem;
+                    max-width: 32rem;
                 }
                 &.right-2 {
                     transform: translateY(8rem) translateX(100%) scaleY(1.1);
-                    max-width: 25rem;
+                    max-width: 22rem;
                 }
             }
         }
 
         @media only screen and (max-width: 800px) {
             min-height: 100vh;
-            padding-top: 15rem;
 
             h1 {
                 font-size: 6vw;
@@ -100,6 +99,7 @@
         }
 
         @media only screen and (max-width: 550px) {
+            min-height: 110vh;
             .hero-images {
                 figure {
                     &.left-2 {
@@ -225,19 +225,20 @@
                 display: grid;
                 justify-content: space-between;
                 justify-items: center;
-                grid-template-columns: repeat(auto-fill, minmax(20rem, 35rem));
-                grid-gap: 6rem 3rem;
+                grid-template-columns: repeat(auto-fill, minmax(20rem, 30rem));
+                grid-gap: 4rem 1rem;
                 line-height: 1.5;
 
                 .vision-article {
                     h3 {
                         font-family: var(--font-family-secondary);
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         letter-spacing: 0;
                         line-height: 1;
+                        margin-bottom: 1.5rem;
                     }
                     p {
-                        font-size: 1.8rem;
+                        font-size: 1.4em;
                     }
                 }
             }
