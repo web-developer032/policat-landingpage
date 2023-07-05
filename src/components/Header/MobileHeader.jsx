@@ -119,7 +119,7 @@ function MobileHeader() {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://t.me/policecat_btc">
                                 <img src={telegramIcon} alt="telegram" className="icon-s" />
                             </a>
                         </li>
