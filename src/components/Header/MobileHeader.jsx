@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useResponsiveView } from "@/utils/customHooks";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 import MobileMenuOpenIcon from "@/assets/icons/MobileMenuOpenIcon";
 import MobileMenuCloseIcon from "@/assets/icons/MobileMenuCloseIcon";
@@ -11,6 +10,17 @@ import telegramIcon from "@/assets/icons/telegram.png";
 import logo from "@/assets/logos/logo.png";
 
 function MobileHeader() {
+    const location = useLocation();
+    const [isHomePage, setIsHomePage] = useState(true);
+
+    useEffect(() => {
+        if (location.pathname === "/" || location.pathname === "") {
+            setIsHomePage(true);
+        } else {
+            setIsHomePage(false);
+        }
+    }, [location.pathname]);
+
     const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
     const handleMenuOpen = () => {
@@ -56,13 +66,37 @@ function MobileHeader() {
                 <nav className={`main-links`}>
                     <ul>
                         <li>
-                            <a href="#vision">Vision</a>
+                            {" "}
+                            {isHomePage ? (
+                                <a href="#vision">Vision</a>
+                            ) : (
+                                <Link to={`../#vision`} relative="path" preventScrollReset={true}>
+                                    Vision
+                                </Link>
+                            )}
                         </li>
                         <li>
-                            <a href="#collection">Collection</a>
+                            {isHomePage ? (
+                                <a href="#collection">Collection</a>
+                            ) : (
+                                <Link
+                                    to={`../#collection`}
+                                    relative="path"
+                                    preventScrollReset={true}
+                                >
+                                    Collection
+                                </Link>
+                            )}
                         </li>
                         <li>
-                            <a href="#roadmap">Roadmap</a>
+                            {" "}
+                            {isHomePage ? (
+                                <a href="#roadmap">Roadmap</a>
+                            ) : (
+                                <Link to={`../#roadmap`} relative="path" preventScrollReset={true}>
+                                    Roadmap
+                                </Link>
+                            )}
                         </li>
 
                         <li>
@@ -80,7 +114,7 @@ function MobileHeader() {
                 <nav className="social-links">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="https://twitter.com/policecat_btc">
                                 <img src={twitterIcon} alt="twitter icon" className="icon-s" />
                             </a>
                         </li>
@@ -90,7 +124,7 @@ function MobileHeader() {
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://medium.com/@policecatbtc">
                                 <img src={mediumIcon} alt="medium" className="icon-s" />
                             </a>
                         </li>

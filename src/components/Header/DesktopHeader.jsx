@@ -1,11 +1,22 @@
 import React, { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import twitterIcon from "@/assets/icons/twitter.png";
 import mediumIcon from "@/assets/icons/medium.png";
 import telegramIcon from "@/assets/icons/telegram.png";
 import logo from "@/assets/logos/logo.png";
 
 function DesktopHeader() {
+    const location = useLocation();
+    const [isHomePage, setIsHomePage] = useState(true);
+
+    useEffect(() => {
+        if (location.pathname === "/" || location.pathname === "") {
+            setIsHomePage(true);
+        } else {
+            setIsHomePage(false);
+        }
+    }, [location.pathname]);
+
     return (
         <header className="main-header d-glass">
             <nav className="social-links">
@@ -21,7 +32,7 @@ function DesktopHeader() {
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://medium.com/@policecatbtc">
                             <img src={mediumIcon} alt="medium" className="icon-s" />
                         </a>
                     </li>
@@ -32,13 +43,35 @@ function DesktopHeader() {
                 <nav className={`main-links`}>
                     <ul>
                         <li>
-                            <a href="#vision">Vision</a>
+                            {isHomePage ? (
+                                <a href="#vision">Vision</a>
+                            ) : (
+                                <Link to={`../#vision`} relative="path" preventScrollReset={true}>
+                                    Vision
+                                </Link>
+                            )}
                         </li>
                         <li>
-                            <a href="#collection">Collection</a>
+                            {isHomePage ? (
+                                <a href="#collection">Collection</a>
+                            ) : (
+                                <Link
+                                    to={`../#collection`}
+                                    relative="path"
+                                    preventScrollReset={true}
+                                >
+                                    Collection
+                                </Link>
+                            )}
                         </li>
                         <li>
-                            <a href="#roadmap">Roadmap</a>
+                            {isHomePage ? (
+                                <a href="#roadmap">Roadmap</a>
+                            ) : (
+                                <Link to={`../#roadmap`} relative="path" preventScrollReset={true}>
+                                    Roadmap
+                                </Link>
+                            )}
                         </li>
                     </ul>
                 </nav>

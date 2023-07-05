@@ -50,7 +50,11 @@ function Charities() {
             </section>
 
             <h6>Invest in NFTs. Invest in Cats. Invest in Change. Invest in PoliceCat BTC.</h6>
-            <Footer />
+            <Footer
+                roadmapLink={"#roadmap"}
+                collectionLink={"#collection"}
+                visionLink={"#vision"}
+            />
         </section>
     );
 }

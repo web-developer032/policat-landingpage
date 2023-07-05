@@ -6,7 +6,6 @@ import PlayGame from "./pages/PlayGame";
 import ScrollToTop from "@/components/ScrollToTop";
 
 function App() {
-    console.log("XF");
     return (
         <>
             <ScrollToTop />

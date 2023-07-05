@@ -130,7 +130,11 @@ function PlayGame() {
                     </article>
                 </section>
 
-                <Footer />
+                <Footer
+                    roadmapLink={"#roadmap"}
+                    collectionLink={"#collection"}
+                    visionLink={"#vision"}
+                />
             </section>
         </section>
     );
