@@ -27,12 +27,12 @@ function DesktopHeader() {
                         </a>
                     </li>
                     <li>
-                        <a href="https://t.me/policecat_btc">
+                        <a href="https://t.me/policecat_btc" target="_blank">
                             <img src={telegramIcon} alt="telegram" className="icon-s" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://medium.com/@policecatbtc">
+                        <a href="https://medium.com/@policecatbtc" target="_blank">
                             <img src={mediumIcon} alt="medium" className="icon-s" />
                         </a>
                     </li>

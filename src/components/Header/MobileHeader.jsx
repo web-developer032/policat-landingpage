@@ -114,17 +114,17 @@ function MobileHeader() {
                 <nav className="social-links">
                     <ul>
                         <li>
-                            <a href="https://twitter.com/policecat_btc">
+                            <a href="https://twitter.com/policecat_btc" target="_blank">
                                 <img src={twitterIcon} alt="twitter icon" className="icon-s" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://t.me/policecat_btc">
+                            <a href="https://t.me/policecat_btc" target="_blank">
                                 <img src={telegramIcon} alt="telegram" className="icon-s" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://medium.com/@policecatbtc">
+                            <a href="https://medium.com/@policecatbtc" target="_blank">
                                 <img src={mediumIcon} alt="medium" className="icon-s" />
                             </a>
                         </li>

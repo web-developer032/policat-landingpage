@@ -76,7 +76,7 @@ function Footer(props) {
                             </a>
                         </li>
                         <li>
-                            <a href="https://t.me/dexordi" target="_blank">
+                            <a href="https://t.me/policecat_btc" target="_blank">
                                 <img src={telegramIcon} alt="telegram" className="icon-s" />
                             </a>
                         </li>
